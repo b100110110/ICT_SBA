@@ -5,89 +5,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>無標題文件</title>
-<style type="text/css"> 
-<!-- 
-body  {
-	font: 100% 細明體, 新細明體;
-	background: #666666;
-	margin: 0; /* 比較好的做法是將 Body 元素的邊界與欄位間隔調整為零，以處理不同的瀏覽器預設值 */
-	padding: 0;
-	text-align: center; /* 這樣會讓容器在 IE 5* 瀏覽器內置中對齊。然後，文字會在 #container 選取器中設定為靠左對齊預設值 */
-	color: #000000;
-}
-.twoColLiqLtHdr #container { 
-	width: 100%;  /* 這樣將會建立為 80% 瀏覽器寬度的容器 */
-	background: #FFFFFF;
-	margin: 0 auto; /* 自動邊界 (搭配寬度) 會讓頁面置中對齊 */
-	border: 1px solid #000000;
-	text-align: left; /* 這樣做會覆寫 Body 元素上的 text-align: center。 */
-} 
-.twoColLiqLtHdr #header {
-	background: #D1F5FA;
-	padding: 0 10px;  /* 這個欄位間隔符合下面顯示的 Div 中，元素的靠左對齊。如果在 #header 中使用影像而非文字，您可能會想要移除欄位間隔。 */
-	text-align: left;
-} 
-.twoColLiqLtHdr #header h1 {
-	margin: 0; /* 將 #header Div 中最後一個元素的邊界調整為零可避免邊界收合 (Div 之間出現的空間，無法解釋)。如果 Div 的周圍具有邊框，這就不是必要動作，因為該項設定也會避免邊界收合 */
-	padding: 10px 0; /* 使用欄位間隔而非邊界便可讓元素遠離 Div 的邊緣 */
-}
 
-/* sidebar1 的提示：
-1. 因為我們是以百分比為單位進行工作，所以最好不要在邊列上使用欄位間隔。它將會新增至寬度，而讓符合標準的瀏覽器建立不明的實際寬度。 
-2. 您可以根據在 ".twoColLiqLtHdr #sidebar1 p" 規則中看見的方式，將左和右邊界放置於 Div 內部的元素上，藉以建立 Div 側邊與內部元素之間的空間。
-3. 因為 Explorer 會在呈現父元素之後計算寬度，所以您有時候會在百分比架構欄中遇到無法解釋的錯誤。如果您需要更多可預期的結果，便可以選擇變更為像素大小的欄。
-*/
-.twoColLiqLtHdr #sidebar1 {
-	float: left;
-	width: 24%; /* 因為這個元素是浮動元素，所以您必須指定寬度 */
-	background: #A5F4FF; /* 背景顏色將會針對欄的內容長度而顯示，但僅止於此 */
-	padding: 15px 0; /* 頂端和底部欄位間隔會在這個 Div 內部建立視覺空間 */
-	text-align: left;
-}
-.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
-	margin-left: 10px; /* 您應該針對將要放置於側邊欄的每個元素，指定左和右邊界 */
-	margin-right: 10px;
-}
-
-/* mainContent 的提示：
-1. mainContent 和 sidebar1 之間的空間是以 mainContent Div 的左邊界建立的。不論 sidebar1 Div 包含多少內容，欄空間將維持不變。當 #sidebar1 的內容結束時，如果您想讓 #mainContent Div 的文字填滿 #sidebar1 的空間，就可以移除這個左邊界。
-2. 若要避免在支援的 800 x 600 最小解析度上出現浮動遺失，mainContent Div 中的元素應該是 430px 或更小 (包括影像)。
-3. 在下列 Internet Explorer 條件註解中，縮放屬性是用來提供 mainContent "hasLayout"。這樣做可避免許多 IE 特有錯誤。
-*/
-.twoColLiqLtHdr #mainContent {
-	margin: 0 20px 0 26%; /* 右邊界的指定方式可以使用百分比或像素為單位。它會在頁面的右下方建立空間。 */
-	text-align: left;
-} 
-.twoColLiqLtHdr #footer {
-	padding: 0 10px; /* 這個欄位間隔符合上面顯示的 Div 中，元素的靠左對齊。 */
-	background:#D1F5FA;
-	text-align: left;
-} 
-.twoColLiqLtHdr #footer p {
-	margin: 0; /* 將頁尾中第一個元素的邊界調整為零可避免邊界收合的可能性 (Div 之間出現的空間) */
-	padding: 10px 0; /* 這個元素的欄位間隔將會建立空間，就如同邊界一樣，但是沒有邊界收合的問題 */
-}
-
-/* 可重複使用的雜項類別 */
-.fltrt { /* 這個類別可用來讓頁面右邊的元素浮動。浮動元素必須位於頁面上必須相鄰的元素前面。 */
-	float: right;
-	margin-left: 8px;
-}
-.fltlft { /* 這個類別可用來讓頁面左邊的元素浮動 */
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat { /* 這個類別應該放置於 Div 或 Break 元素上，而且應該是完整包含浮動的容器關閉前的最後一個元素 */
-	clear:both;
-    height:0;
-    font-size: 1px;
-    line-height: 0px;
-}
-.twoColLiqLtHdr #container #header table tr td {
-	font-size: 200%;
-}
---> 
-</style>
 	<style>
 		/* style for the slider container */
 		.slider {
@@ -141,102 +59,25 @@ body  {
 	font-size: 150%;
 }
     </style>
-<!--[if IE]>
-<style type="text/css"> 
-/* 在這個條件註解中，放置所有 IE 版本的 CSS 修正 */
-.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
-.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
-/* 上面的專用縮放屬性會提供 IE 所需的 hasLayout，以避免許多錯誤 */
-</style>
-<![endif]--></head>
-
-<body class="twoColLiqLtHdr">
-
-<div id="container"> 
-  <div id="header">
-    <table width="480" border="0">
-  <tr>
-    <td width="129" rowspan="2"><img src="../Pictures/school logo.png" width="119" height="116" alt="school_logo" /></td>
-    <td width="341" height="59">ABC 中學 </td>
-  </tr>
-  <tr>
-    <td>ABC Secondary School</td>
-  </tr>
-</table>
-
-</div>
-  <div id="sidebar1">
-<h3>sidebar1 內容</h3>
-<p>
-<table width="195" height="79">
-<td height="33">主頁</td>
-<tr>
-<td>活動詳情</td>
-</tr>
-<tr>
-<td>聯絡我們</td>
-</tr>
-<tr>
-<td>學生登入</td>
-</tr>
-</table>
-</p>
-    <p>&nbsp;</p>
-  <!-- end #sidebar1 --></div>
+<body class="h-full w-full">
+  <div class="absolute top-0 left-0 bg-black w-full h-full"></div>
   <div id="mainContent">
-<h1>50 周年校慶開放日</h1>
-    <div class="slider">
-    	<p id="image"><img src="58th_dance (1).jpg"  class="active"/> </p>
-      <div class="prev"><button onclick="left()">&#10094;</button></div>
-		<div class="next"><button onclick="right()">&#10095;</button></div>
-	</div>
-    
-	<script>
-		var btncount = 1
-		function left() {
-			btncount-=1 ;
-			if (btncount < 1){
-				btncount = 3;
-			}
-			imagePlay();
-		}
-		function right() {
-			btncount++ ;
-			if (btncount > 3){
-				btncount = 1;
-			}
-			imagePlay();
-		}	
-		
-		function imagePlay() {
-			if (btncount == 1) {
-				document.getElementById("image").innerHTML = "<img src=\"58th_dance (1).jpg\" class=\"active\"/>";
-			}else	if (btncount == 2){
-				document.getElementById("image").innerHTML = "<img src=\"group4_af.jpg\" width=\"4928\" height=\"2814\" class=\"active\"/>";
-			}else	if (btncount == 3){
-				document.getElementById("image").innerHTML = "<img src=\"group4_af.jpg\" width=\"4928\" height=\"2814\" class=\"active\"/>";
-			}
-		}
-	</script>
-	
-<h2>H2 層級標題 </h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at, odio.</p>
-  <!-- end #mainContent --></div>
-	<!-- 這個清除元素應該緊接在 #mainContent Div 之後，以便強制 #container Div 包含所有子浮動 --><br class="clearfloat" />
-  <div id="footer">
-<p>ABC 中學 </p>
-<p>ABC Secondary School</p>
-
-  <!-- end #footer -->
-</p>
-<div>
-  <div>地址： 新界屯門湖景邨</div>
-  <div>Address： Wu King Estate, Tuen Mun, NT</div>
-</div>
-<div>
-  <div>電話（Tel）： 24645220 傳真（Fax）： 24614724   電郵（Email）： <a href="mailto:mail@shd.edu.hk" target="_blank">mail@shd.edu.hk</a>
-</div>
-  </div>
-<!-- end #container --></div>
+  <div class="absolute top-0 left-0  z-1000  grid-container h-full w-full text-white">
+    <div class="h-full w-full grid-cols-2 grid-rows-5 gap-2 grid sm:grid-cols-4 sm:grid-rows-5 sm:gap-4 ">
+      <div class="col-span-2 text-2xl m-auto sm:text-6xl">Event1</div>
+      <div class="col-span-2 row-span-2 row-start-4"><button class="btn btn-neutral">Neutral</button></div>
+    </div>
+    <div class="relative h-full w-full text-black">
+      <div class="absolute top-0 right-0">
+        <div tabindex="0" class="collapse bg-base-200">
+          <div class="collapse-title text-xl font-medium">
+            Focus me to see content
+          </div>
+          <div class="collapse-content">
+            <p>tabindex="0" attribute is necessary to make the div focusable</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
