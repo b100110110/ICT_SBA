@@ -72,6 +72,43 @@
         <div tabindex="0" class="collapse bg-base-200">
           <div class="collapse-title text-xl font-medium">
             Focus me to see content
+	    <div>
+    <div class="grid grid-cols-6 grid-rows-7 gap-4">
+        <div class="col-span-4 row-span-4 col-start-2 row-start-2">
+    	<p id="image"><img src="58th_dance (1).jpg"  class="active"/> </p>
+         <div class="prev"><button onclick="left()">&#10094;</button></div>
+		 <div class="next"><button onclick="right()">&#10095;</button></div>
+	  </div>
+    
+	 <script>
+		var btncount = 1
+		function left() {
+			btncount-=1 ;
+			if (btncount < 1){
+				btncount = 3;
+			}
+			imagePlay();
+		}
+		function right() {
+			btncount++ ;
+			if (btncount > 3){
+				btncount = 1;
+			}
+			imagePlay();
+		}	
+		
+		function imagePlay() {
+			if (btncount == 1) {
+				document.getElementById("image").innerHTML = "<img src=\"58th_dance (1).jpg\" class=\"active\"/>";
+			}else	if (btncount == 2){
+				document.getElementById("image").innerHTML = "<img src=\"group4_af.jpg\" width=\"4928\" height=\"2814\" class=\"active\"/>";
+			}else	if (btncount == 3){
+				document.getElementById("image").innerHTML = "<img src=\"group4_af.jpg\" width=\"4928\" height=\"2814\" class=\"active\"/>";
+			}
+		}
+	 </script>
+	     </div>
+	    </div>
           </div>
           <div class="collapse-content">
             <p>tabindex="0" attribute is necessary to make the div focusable</p>
