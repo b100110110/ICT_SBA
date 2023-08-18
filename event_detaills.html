@@ -3,26 +3,72 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-16"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-16">
+    </meta>
     <title>about_us</title>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+    </style>
+
+
 </head>
 
-<body>
-	<img src="#" alt="Company Photo" class="w-full mb-4">
+<body class="h-screen">
+    <img src="img/IMG_0065.JPG" alt="Company Photo" class="w-full h-3/6 object-cover mb-4">
     <main class="container mx-auto my-8">
-        <h1 class="text-4xl font-bold mb-4">Event 1</h1>
-        
+        <h1 class="text-4xl font-bold mb-4">event 1</h1>
         <p class="mb-4">
-			event1 detaills
-		</p>
-		<p class="text-4xl font-bold mb-4"
-		<img src="#" alt="Company Photo" class="w-full mb-4">
-        <p class="mb-4">
-			event1 detaills
-		</p>
-			
+            <meta charset="UTF-16">
+            本校秉承東華三院一貫的辦學宗旨，在屯門區提供優質教育服務，作育英才，使青少年成長後能盡展所長，回饋社會。　我們著重的是「全人教育」，為青少年提供一個優良的學習環境，使能發揮個人的潛能，日後成為具備知識技能、有獨立思考能力、勇於承擔責任和關注社會事務的良好公民。
+            同時，我們培育青少年有正確的價值觀和積極的人生觀，並以校訓「勤儉忠信」為進德修業的依歸，勉勵他們拓展豐盛而有意義的
+        </p>
+
+
+        <img src="https://picsum.photos/400/200" alt="Random Image" class="w-full">
+
+        <p class="mt-8 text-gray-500 text-sm text-center">圖1：學生沒有在認真上課。</p>
+
+
+        <ul>
+            <li class="flex iterms-center">
+                <span class="material-symbols-outlined">
+                    schedule
+                </span>
+                時間:
+            </li>
+            <li class="flex items-center">
+                <span class="material-symbols-outlined">
+                    today
+                </span>
+
+                date
+            </li>
+            <li class="flex items-center">
+                <span class="material-symbols-outlined">
+                    distance
+                </span>
+                address
+            </li>
+        </ul>
+
+        <button type="button"
+            onclick="window.open('./event_ics/event1.ics')"
+            class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">
+            加入行程
+        </button>
+
+
     </main>
 </body>
 
