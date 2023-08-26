@@ -51,11 +51,11 @@
       </div>
       <!-- game body, to be controlled by JQuery -->
       <div id="game-body" class="hidden grow flex flex-col justify-center items-center">
-        <p class="text-4xl font-bold text-center text-gray-800 mb-8">
+        <p id="question" class="text-4xl font-bold text-center text-gray-800 mb-8">
           Question Placeholder
         </p>
 
-        <p class="text-3xl font-bold text-center text-gray-800 mb-8">
+        <p id="answer" class="text-3xl font-bold text-center text-gray-800 mb-8">
           Correct Anwser
         </p>
 
@@ -88,6 +88,24 @@
           </button>
         </div>
         <div></div>
+      </div>
+      <div id="game-end-cover" class="hidden grow flex flex-col justify-center items-center">
+        <p class="gradient-title text-8xl font-bold text-center text-gray-800 mb-8">
+          Game Result
+        </p>
+        <p class="text-3xl">
+           答對了: <span id="num-correct-answer" class="text-lime-700">100</span>題
+           , 答錯了: <span id="num-wrong-answer" class="text-rose-700">200</span>題
+        </p>
+
+        <div>
+          <button alt="" onclick="window.open('index.html', '_self')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-3xl md:text-xl">
+            Back to Main Page
+          </button>
+          <button alt="" onclick="location.reload()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-3xl md:text-xl">
+            Try Again
+          </button>
+        </div>
       </div>
     </div>
   </main>
