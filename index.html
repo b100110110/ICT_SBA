@@ -1,61 +1,145 @@
 <!DOCTYPE html">
 <html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      .always-on-top {
+        z-index: 100000;
+      }
+    </style>
+  </head>
+  <title>ABC中學 － 主頁</title>
 
-<head>
-	<link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
-	<script src="https://cdn.tailwindcss.com"></script>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<style>
-		.always-on-top {
-			z-index: 100000;
-		}
-	</style>
-</head>
-<title>ABC中學 － 主頁</title>
+  <body class="bg-slate-50">
+    <header
+      class="fixed always-on-top top-0 left-0 py-4 bg-gray-800 text-white w-full"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">ABC Secondary School</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li>
+              <a href="about_us_version2.html" class="text-white">About</a>
+            </li>
+            <li><a href="contact.html" class="text-white">Contact</a></li>
+            <li>
+              <a href="sitemap_version2.html" class="text-white">Site Map</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <video
+      aria-hidden="true"
+      muted=""
+      class="relative top-0 left-0 h-screen w-full object-cover z-0"
+      autoplay=""
+      loop=""
+      playsinline=""
+    >
+      <source
+        src="https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/121dd5e0-eaea-424d-bdf2-db02ca1f5e55/gpt-4-92586ac_1080p60.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
 
-<body class="bg-slate-50">
-	<header class="fixed always-on-top top-0 left-0 py-4 bg-gray-800 text-white w-full">
-		<div class="container mx-auto flex justify-between items-center">
-			<h1 class="text-2xl font-bold">ABC Secondary School</h1>
-			<nav>
-				<ul class="flex space-x-4">
-					<li><a href="index.html" class="text-white">Home</a></li>
-					<li><a href="about_us_version2.html" class="text-white">About</a></li>
-					<li><a href="contact.html" class="text-white">Contact</a></li>
-					<li><a href="sitemap_version2.html" class="text-white">Site Map</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<video aria-hidden="true" muted="" class="relative top-0 left-0 h-screen w-full object-cover z-0" autoplay="" loop=""
-	playsinline="">
-	<source
-		src="https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/121dd5e0-eaea-424d-bdf2-db02ca1f5e55/gpt-4-92586ac_1080p60.mp4"
-		type="video/mp4"> Your browser does not support the video tag.
-</video>
-	<div class="">
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
-		<p class="text-2xl font-bold absolute">Event</p><br/>
 
-	</div>
-</body>
+		<div class="pt-4"></div>
 
+    <div
+      class="container mx-auto flex flex-col overflow-hidden bg-white shadow-lg"
+    >
+      <div class="h-1 w-full bg-gray-800"></div>
+      <div class="m-2 flex flex-row items-center justify-center">
+        <h2 class="mr-2 text-xl font-semibold text-gray-800">校慶活動總覽</h2>
+        <img
+          class="h-12 w-12 rounded-full object-cover"
+          src="./img/event_icon.svg"
+        />
+      </div>
+      <div class="flex flex-col items-center px-2 py-3">
+        <div class="w-full grid grid-cols-3 grid-rows-1 gap-4 pl-4 pr-4 pb-4">
+          <div
+            class="text-black block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+          >
+            <a href="#!">
+              <img
+                class="rounded-t-lg"
+                src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-6">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                class="bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+              >
+                More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="text-black block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+          >
+            <a href="#!">
+              <img
+                class="rounded-t-lg"
+                src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-6">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                class="bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+              >
+                More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="text-black block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+          >
+            <a href="#!">
+              <img
+                class="rounded-t-lg"
+                src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-6">
+              <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+              <p class="mb-4 text-base">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                class="bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+              >
+                More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
