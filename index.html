@@ -21,6 +21,9 @@
       .image-block:hover > .text-overlay {
         display: flex;
       }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
   <title>ABC中學 － 主頁</title>
@@ -45,22 +48,35 @@
         </nav>
       </div>
     </header>
-    <video
-      aria-hidden="true"
-      muted=""
-      class="relative top-0 left-0 h-screen w-full object-cover z-0"
-      autoplay=""
-      loop=""
-      playsinline=""
-    >
-      <source
-        src="img/sba_stem.mp4"
-        type="video/mp4"
-      />
-      Your browser does not support the video tag.
-    </video>
+    <div class="w-full h-screen relative top-0 left-0">
+      <video
+        aria-hidden="true"
+        muted=""
+        class="absolute top-0 left-0 h-screen w-full object-cover z-0"
+        autoplay=""
+        loop=""
+        playsinline=""
+      >
+        <source src="img/sba_stem.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="h-screen w-full opacity-70 bg-gray-900"></div>
 
-    <div class="pt-4"></div>
+      <div
+        class="absolute mx-auto w-3/5 bottom-1/4 left-1/2 -translate-x-2/4 flex flex-row"
+      >
+        <h1 class="text-4xl text-white">ABC 中學與您一同邁向50周年</h1>
+        <div class="grow"></div>
+        <button
+          onclick="document.getElementById('content-start').scrollIntoView();"
+          class="bg-transparent hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded"
+        >
+          了解更多
+        </button>
+      </div>
+    </div>
+
+    <div id="content-start" class="pt-4"></div>
 
     <div
       class="container mx-auto flex flex-col overflow-hidden bg-white shadow-lg"
@@ -171,7 +187,9 @@
             class="absolute h-full w-full rounded-lg object-cover object-center hover:brightness-50"
             src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
           />
-          <p class="absolute text-white w-full h-full mx-auto text-overlay justify-center items-center">
+          <p
+            class="absolute text-white w-full h-full mx-auto text-overlay justify-center items-center"
+          >
             Click to see more
           </p>
         </div>
@@ -204,12 +222,17 @@
       </div>
     </div>
     <footer class="bg-gray-900 py-8">
-      <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-center"
+      >
         <div class="text-white text-sm">
-          <a href="sitemap_version2.html" class="text-white hover:text-gray-400">Site Map</a>
+          <a href="sitemap_version2.html" class="text-white hover:text-gray-400"
+            >Site Map</a
+          >
         </div>
         <div class="text-white text-sm mt-4 sm:mt-0">
-          Address: 123 Main Street, City, Country | Phone: +852 1234 5678 | Email: info@abc.edu.hk
+          Address: 123 Main Street, City, Country | Phone: +852 1234 5678 |
+          Email: info@abc.edu.hk
         </div>
       </div>
     </footer>
