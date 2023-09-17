@@ -122,7 +122,7 @@ function gameStart() {
   });
 }
 
-$("#game-cover").click(gameStart);
+$("#start-game-button").click(gameStart);
 
 $("#choice-0").click(() => handleQuestionUpdate(1));
 $("#choice-1").click(() => handleQuestionUpdate(2));
