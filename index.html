@@ -12,6 +12,15 @@
       .always-on-top {
         z-index: 100000;
       }
+      .image-block:hover > img {
+        filter: brightness(50%);
+      }
+      .text-overlay {
+        display: none;
+      }
+      .image-block:hover > .text-overlay {
+        display: flex;
+      }
     </style>
   </head>
   <title>ABC中學 － 主頁</title>
@@ -138,6 +147,60 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto flex flex-col overflow-hidden bg-white shadow-lg"
+    >
+      <div class="h-1 w-full bg-orange-600"></div>
+      <div class="m-2 flex flex-row items-center justify-center">
+        <h2 class="mr-2 text-xl font-semibold text-gray-800">
+          往年活動精彩照片
+        </h2>
+        <img
+          class="h-12 w-12 rounded-full object-cover"
+          src="./img/event_icon.svg"
+        />
+      </div>
+
+      <div class="grid grid-cols-3 grid-rows-2 gap-4 p-4">
+        <div class="rounded-lg relative image-block">
+          <img
+            alt="gallery"
+            class="absolute h-full w-full rounded-lg object-cover object-center hover:brightness-50"
+            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+          />
+          <p class="absolute text-white w-full h-full mx-auto text-overlay justify-center items-center">
+            Click to see more
+          </p>
+        </div>
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        />
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        />
+
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        />
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        />
+        <img
+          alt="gallery"
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        />
       </div>
     </div>
   </body>
